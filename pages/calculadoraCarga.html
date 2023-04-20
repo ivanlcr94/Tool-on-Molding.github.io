@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Calculadora de producción</title>
+    </head>
+
+<body>
+    <header class="shadow">
+        <nav>
+            <div class="navContainer">
+                <a href="" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><i
+                        class="bi bi-list"></i></a>
+                <h1>Calculadora de Carga</h1>
+            </div>
+
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">Tool on molding</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <a class="menu" href="../index.html"><i class="bi bi-calculator-fill"></i>Calculadora de producción</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="resultado" class="container">
+            <div class="row contenedorResultado justify-content-center">
+                <div id="contenedorResultado" class="col-11">
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="entradaDeDatos" class="container">
+
+            <form action="" id="formulario" class="row  justify-content-center ">
+
+                <div class="col-11">
+
+                    <div>
+
+                        <div class="form-floating mb-3 ">
+                            <input type="number" class="form-control pesoCavidad " id="floatingInput"
+                                placeholder="Peso std por cavidad (g)" required>
+                            <label for="floatingInput">Peso std por cavidad (g)</label>
+                        </div>
+
+                        <div class="form-floating mb-3  ">
+                            <input type="number" class="form-control cavidades" id="floatingInput"
+                                placeholder="Cavidades" required>
+                            <label for="floatingInput">Cavidades</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control pesoColada" id="floatingInput"
+                                placeholder="Peso de colada (g)" required>
+                            <label for="floatingInput">Peso de colada (g)</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control ciclo" id="floatingInput"
+                                placeholder="Tiempo de Ciclo (s)" required>
+                            <label for="floatingInput">Tiempo de Ciclo (s)</label>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="">
+
+                                <select class="form-select mb-3 seleccionarMaquina" aria-label="Default select example"
+                                    required>
+                                    <option value="">Seleccione Maquina</option>
+                                    <option value="1">1 - Dakumar 600-HH</option>
+                                    <option value="2">2 - Haitian 530X</option>
+                                    <option value="3">3 - Dakumar 650-SV</option>
+                                    <option value="4">4 - Haitian 530X</option>
+                                    <option value="5">5 - Haitian 470W</option>
+                                </select>
+
+                                <select class="form-select form-select seleccionarMp"
+                                    aria-label=".form-select-sm example" required>
+                                    <option value="">Materia prima</option>
+                                    <option value="0.92">LDPE - Polietileno de baja densidad</option>
+                                    <option value="0.95">HDPE - Polietileno de alta densidad</option>
+                                    <option value="0.90">PP - Polipropileno</option>
+                                    <option value="1.38">PVC - Cloruro de polivinilo</option>
+                                    <option value="1.05">PS - Poliestireno</option>
+                                    <option value="1.05">HIPS - Poliestireno de alto impacto</option>
+                                    <option value="1.08">SAN - Copolímero de estireno-acrilonitrilo</option>
+                                    <option value="1.05">ABS - Copolímero de acrilonitrilo-butadieno-estireno</option>
+                                    <option value="1.07">ASA - Copolímero de acrilonitrilo-estireno-acrilato</option>
+                                    <option value="1.18">PMMA - Polimetilmetacrilato</option>
+                                    <option value="1.13">PA 6 - Poliamida-6 (nylon-6)</option>
+                                    <option value="1.13">PA 6.6 - Poliamida-6.6 (nylon-6.6)</option>
+                                    <option value="1.04">PA 11 - Poliamida-11 (nylon-11)</option>
+                                    <option value="1.02">PA 12 - Poliamida-12 (nylon-12)</option>
+                                    <option value="1.22">PC - Policarbonato</option>
+                                    <option value="1.37">PET - Tereftalato de polietileno</option>
+                                    <option value="1.29">PBTP - Tereftalato de polibutileno</option>
+                                    <option value="1.06">PPE/PS - Polifenilenéter + poliestireno</option>
+                                    <option value="1.24">PSU - Polisulfona</option>
+                                    <option value="1.34">PPS - Sulfuro de polifenileno</option>
+                                    <option value="1.43">PI - Poliimida</option>
+                                    <option value="1.42">POM - Polioximetileno</option>
+                                </select>
+                                <div>
+                                    <div class="col-12">
+                                        <button type="submit" id="botonCalcular"
+                                            class="btn btn-primary">Calcular</button>
+                                    </div>
+                                </div>
+
+                            </div>
+            </form>
+        </section>
+
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+    <script src="../js/calculadoraCarga.js"></script>
+
+</body>
+
+</html>
