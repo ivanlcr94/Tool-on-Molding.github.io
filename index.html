@@ -21,18 +21,18 @@
             <div class="navContainer d-flex p-2 justify-content-between ">
                 <a href="" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><i
                         class="bi bi-list"></i></a>
-                        
-                            <form class="d-flex col-10 p-2 justify-content-center" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar Molde" aria-label="Search">
-                                <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
-                            </form>
-                            <div>
 
-                            </div>
-                        
-                        
+                <form class="d-flex col-10 p-2 justify-content-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Molde" aria-label="Search">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <div>
+
+                </div>
+
+
             </div>
-    
+
             <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header">
@@ -41,91 +41,209 @@
                 </div>
                 <div class="offcanvas-body">
                     <div>
-                        <a class="menu" href="./pages/calculadoraCarga.html"><i class="bi bi-calculator-fill"></i>Calculadora de carga</a>
+                        <a class="menu" href="./pages/calculadoraCarga.html"><i
+                                class="bi bi-calculator-fill"></i>Calculadora de carga</a>
                     </div>
                 </div>
             </div>
-            
+
         </nav>
-    
+
     </header>
 
     <main class="container p-2">
 
         <h1 class="d-flex justify-content-center ">Mold Setup</h1>
 
-
+        <!-- Tabs -->
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Articulo</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Molde</button>
-              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Programación</button>
-              
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-               
-                
-                    <img src="./img/producto copy.png" class="card-img-top" alt="...">
-                 
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Articulo</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Molde</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Programación</button>
 
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            
+            <!-- Articulo -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <img src="./img/producto copy.png" class="card-img-top" alt="...">
+            </div>
+            
+            <!-- Molde -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                ...
+            </div>
+
+            <!-- Programa -->
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                
+            
                 <div class="card mb-3 shadow">
                     <img src="./img/producto.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Molde 2021</h5>
-                      <p class="card-text">CODO HH 63</p>
-                      <p class="card-text"><small class="text-body-secondary">Ultima actualización: 23/02/23</small></p>
-                </div>
-        
-              
-        
-            <!-- Acordion -->
-                <section class="shadow">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            TIEMPO DE CICLO
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                        </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            INYECCIÓN
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                        </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            CARGA
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                        </div>
-                        </div>
+                        <h5 class="card-title">Molde 2021</h5>
+                        <p class="card-text">CODO HH 63</p>
+                        <p class="card-text"><small class="text-body-secondary">Ultima actualización: 23/02/23</small>
+                        </p>
                     </div>
-                </section>
 
+
+
+                    <!-- Acordion -->
+                    <section class="shadow">
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          
+                            <!-- Tiempo de ciclo -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        TIEMPO DE CICLO
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                        <div class="table-responsive">
+                                            <table class="table align-middle">
+                                                <thead class="table-dark">
+                                                <tr class="align-center">
+                                                    <th scope="col">Ciclo</th>
+                                                    <th scope="col">Tiempo</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="align-center">
+                                                    <th scope="row">Cerrar Molde</th>
+                                                    <td class="align-center">7</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Inyección</th>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Postpresión</th>
+                                                    <td>4,5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Carga</th>
+                                                    <td>4,5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">T. Enfriamiento</th>
+                                                    <td>30</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Abrir Molde</th>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Expulsión</th>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Robot</th>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-active">TIEMPO TOTAL</th>
+                                                    <td class="table-active">2</td>
+                                                </tr>
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        INYECCIÓN
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        second item's accordion body. Let's imagine this being filled with some actual
+                                        content.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        POSTPRESIÓN
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        second item's accordion body. Let's imagine this being filled with some actual
+                                        content.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        CARGA
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        second item's accordion body. Let's imagine this being filled with some actual
+                                        content.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        TEMPERATURA DE CILINDRO
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        third item's accordion body. Nothing more exciting happening here in terms of
+                                        content, but just filling up the space to make it look, at least at first
+                                        glance, a bit more representative of how this would look in a real-world
+                                        application.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
+                    tabindex="0">...</div>
             </div>
-            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
-          </div>
 
-        
+
     </main>
 
     <footer>
