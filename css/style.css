@@ -27,7 +27,7 @@ header{
     align-items: center;
     width: 100%;
     padding: 10px 0px 10px 0px;
-    border-bottom: 2px solid rgb(14, 154, 248);
+    border-bottom: 4px solid rgb(14, 154, 248);
 }
 
 .navContainer a i{
