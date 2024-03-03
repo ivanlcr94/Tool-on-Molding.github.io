@@ -49,6 +49,7 @@ function calcular(e) {
     const cantidadCavidad = document.querySelector(".cavidades").value;
     const pesoColada = document.querySelector(".pesoColada").value;
     const seleccionarMaquina = document.querySelector(".seleccionarMaquina").value;
+    const diametroHusillo = 
     const seleccionarMp = document.querySelector(".seleccionarMp").value;
     const ciclo = document.querySelector(".ciclo").value;
 
