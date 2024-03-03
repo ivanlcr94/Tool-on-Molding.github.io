@@ -56,6 +56,14 @@ img.iconoAcordion {
     margin: 0px 25px 0px 0px;
 }
 
+#botonCalcular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+}
+
 /* Footer */
 
 footer {

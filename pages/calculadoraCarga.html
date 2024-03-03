@@ -40,17 +40,7 @@
 
     <main>
 
-        <section id="resultado" class="container">
-            <div class="row contenedorResultado justify-content-center">
-                <div id="contenedorResultado" class="col-11">
-
-
-
-
-                </div>
-            </div>
-        </section>
-
+      
         <section id="entradaDeDatos" class="container">
 
             <form action="" id="formulario" class="row  justify-content-center ">
@@ -84,13 +74,13 @@
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control ciclo" id="floatingInput"
+                            <input type="number" class="form-control diametroHusillo" id="floatingInput"
                                 placeholder="Ø Diametro del husillo" required>
                             <label for="floatingInput">Ø Diametro del husillo</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control ciclo" id="floatingInput"
+                            <input type="number" class="form-control cargaMaxCm3" id="floatingInput"
                                 placeholder="Carga maxima en cm3" required>
                             <label for="floatingInput">Carga maxima en cm3</label>
                         </div>
@@ -141,13 +131,43 @@
                                 </select>
                                 <div>
                                     <div class="col-12">
-                                        <button type="submit" id="botonCalcular"
-                                            class="btn btn-primary">Calcular</button>
+                                        <button type="button submit" id="botonCalcular" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            CALCULAR
+                                          </button>
                                     </div>
                                 </div>
 
                             </div>
             </form>
+
+            <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Resultados</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <section id="resultado" class="container">
+                <div class="row contenedorResultado justify-content-center">
+                    <div id="contenedorResultado" class="col-11">
+                        <!-- ACA SE EJECUTA EL innerHTML -->
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
         </section>
 
 
