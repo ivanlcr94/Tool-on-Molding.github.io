@@ -72,7 +72,7 @@ function calcular(e) {
         <p>Conmutacción: ${puntoConmutacion.toFixed(1)} mm (${volumenConmutacion.toFixed(1)}cm3)</p>
         <p>Cojín: ${recorridoCojin.toFixed(1)} mm (${volumenCojin.toFixed(1)} cm3)</p>
         <P>Tiempo de residencia: ${tiempoResidencia.toFixed(1)} min</P>
-        <p>Porcentaje utilización de unidad inyección</p>
+        <p>Utilización de unidad inyección</p>
         <div class="col-12 progress" style="height: 25px;">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: ${utilizacionTotalUnidadInyección.toFixed(1)}%;" aria-valuenow="${utilizacionTotalUnidadInyección.toFixed(1)}%" aria-valuemin="0" aria-valuemax="100">${utilizacionTotalUnidadInyección.toFixed(1)}%</div>
                     </div>
